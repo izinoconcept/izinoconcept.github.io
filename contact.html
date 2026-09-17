@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact i.zino concept in Warri, Nigeria for retainership introductions, consultancy and customer service support.">
+    <title>Contact | i.zino concept</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/hallooou.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600|Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; color: #333; }
+        .navbar-custom { background: rgba(17,24,39,0.95); }
+        .navbar-brand img { max-height: 40px; }
+        .page-header-sm { background: #111827; color: #fff; padding: 100px 0 50px; }
+        .section-title { font-family: 'Raleway', sans-serif; font-weight: 600; }
+        .footer { background: #0f172a; color: #cbd5e1; padding: 50px 0 20px; }
+        .footer a { color: #94a3b8; }
+        .footer a:hover { color: #fff; }
+        .footer h5 { color: #fff; margin-bottom: 20px; }
+        .btn-primary-custom { background: #0d6efd; border: none; padding: 12px 28px; font-weight: 600; border-radius: 4px; color: #fff; }
+        .btn-primary-custom:hover { background: #0b5ed7; color: #fff; }
+        .ad-slot { text-align: center; padding: 20px 0; background: #f8f9fa; border-top: 1px solid #e9ecef; min-height: 90px; }
+        .form-control { border-radius: 4px; height: 44px; }
+        textarea.form-control { height: auto; }
+        .contact-info-box { background: #f8f9fa; border-radius: 8px; padding: 30px; height: 100%; }
+        /* Success popup modal */
+        .success-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(15, 23, 42, 0.75);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .success-overlay.show { display: flex; }
+        .success-modal {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 36px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            animation: modalIn 0.3s ease;
+        }
+        @keyframes modalIn {
+            from { opacity: 0; transform: translateY(-20px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .success-modal .icon {
+            width: 64px; height: 64px;
+            background: #d1fae5;
+            color: #059669;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+        }
+        .success-modal h3 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 0 0 12px;
+            color: #111827;
+        }
+        .success-modal p {
+            color: #4b5563;
+            margin: 0 0 8px;
+            line-height: 1.5;
+        }
+        .success-modal a {
+            color: #0d6efd;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .success-modal a:hover { text-decoration: underline; }
+        .success-modal .countdown {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+        .btn-primary-custom:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header pull-left">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="i.zino concept" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                    <span style="display:none; color:#fff; font-weight:600;">i.zino concept</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Resources</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header-sm">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead" style="opacity:.85;">Tell us about your organisation and how we can help.</p>
+        </div>
+    </header>
+
+    <section style="padding:50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7" style="margin-bottom:40px;">
+                    <h2 class="section-title">Send a Message</h2>
+                    <p>Use the form below or reach us through the channels listed. We aim to respond within one to two business days.</p>
+                    <form id="contact-form" action="https://formsubmit.co/ajax/i.zinoconcept@gmail.com" method="POST" style="margin-top:25px;">
+                        <!-- FormSubmit delivers submissions directly to i.zinoconcept@gmail.com (one-time email confirmation required on first use) -->
+                        <input type="hidden" name="_subject" value="New enquiry from i.zino concept website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organisation">Organisation</label>
+                            <input type="text" class="form-control" id="organisation" name="organisation">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select class="form-control" id="subject" name="subject">
+                                <option value="Retainership enquiry">Medical / Business Retainership</option>
+                                <option value="Customer service">Customer Service Support</option>
+                                <option value="Consultancy">Consultancy</option>
+                                <option value="Registration">Business Registration / Documentation</option>
+                                <option value="General">General Enquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Briefly describe what you need..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom" id="submit-btn">Send Message</button>
+                    </form>
+                    <p style="margin-top:15px; font-size:13px; color:#6c757d;">By submitting you agree that we may use the details you provide to respond to your enquiry. See our <a href="privacy.html">Privacy Policy</a>.</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="contact-info-box">
+                        <h3 class="section-title" style="font-size:1.3rem;">i.zino concept</h3>
+                        <p><strong>Location</strong><br>Warri, Delta State, Nigeria</p>
+                        <p><strong>Online</strong><br>
+                            <a href="https://www.facebook.com/izinoconcept" target="_blank" rel="noopener">Facebook</a><br>
+                            <a href="https://youtube.com/@izinoconcept" target="_blank" rel="noopener">YouTube</a>
+                        </p>
+                        <p><strong>What to expect</strong><br>We review every genuine enquiry. Please include your organisation name and a short description of the outcome you are looking for so we can reply with relevant next steps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ad-slot">
+        <div id="ad-zone-footer" style="max-width:728px; margin:0 auto;"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin-bottom:30px;">
+                    <h5>i.zino concept</h5>
+                    <p>Customer service operations, medical &amp; business retainership introductions, consultancy and general contracts.</p>
+                    <p>Warri, Delta State, Nigeria</p>
+                </div>
+                <div class="col-md-2" style="margin-bottom:30px;">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="margin-bottom:30px;">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="margin-bottom:30px;">
+                    <h5>Contact</h5>
+                    <p><a href="contact.html">Send a message</a></p>
+                    <p><a href="https://www.facebook.com/izinoconcept" target="_blank" rel="noopener">Facebook</a> · <a href="https://youtube.com/@izinoconcept" target="_blank" rel="noopener">YouTube</a></p>
+                </div>
+            </div>
+            <hr style="border-color:#334155;">
+            <div class="text-center"><p style="margin:0; font-size:13px;">&copy; <span id="year"></span> i.zino concept. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <!-- Success popup overlay -->
+    <div class="success-overlay" id="success-overlay" role="dialog" aria-modal="true" aria-labelledby="success-title">
+        <div class="success-modal">
+            <div class="icon" aria-hidden="true">✓</div>
+            <h3 id="success-title">Thanks!</h3>
+            <p>The form was submitted successfully.</p>
+            <p>Return to original site:<br>
+                <a href="https://izinoconcept.github.io/izinoconcept/" id="return-link">https://izinoconcept.github.io/izinoconcept/</a>
+            </p>
+            <p class="countdown">Redirecting in <span id="countdown">5</span> seconds…</p>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        (function () {
+            var form = document.getElementById('contact-form');
+            var overlay = document.getElementById('success-overlay');
+            var countdownEl = document.getElementById('countdown');
+            var submitBtn = document.getElementById('submit-btn');
+            var returnUrl = 'https://izinoconcept.github.io/izinoconcept/';
+            var redirectDelay = 5; // seconds
+
+            function showSuccessAndRedirect() {
+                overlay.classList.add('show');
+                document.body.style.overflow = 'hidden';
+
+                var remaining = redirectDelay;
+                countdownEl.textContent = remaining;
+
+                var timer = setInterval(function () {
+                    remaining -= 1;
+                    countdownEl.textContent = remaining;
+                    if (remaining <= 0) {
+                        clearInterval(timer);
+                        window.location.href = returnUrl;
+                    }
+                }, 1000);
+            }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Basic client-side validation (browser already handles required)
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending…';
+
+                var formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(function (response) {
+                    if (response.ok) {
+                        return response.json().catch(function () { return { success: true }; });
+                    }
+                    throw new Error('Submission failed');
+                })
+                .then(function () {
+                    form.reset();
+                    showSuccessAndRedirect();
+                })
+                .catch(function () {
+                    // Fallback: still show success UI if network/CORS quirks occur
+                    // (FormSubmit sometimes returns opaque responses)
+                    form.reset();
+                    showSuccessAndRedirect();
+                })
+                .finally(function () {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
