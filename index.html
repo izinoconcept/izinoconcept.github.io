@@ -100,8 +100,16 @@
 
     <!-- PopUp/Under Ad Tag Section -->
 
-    <script type="text/javascript" src="//data527.click/aa8c919d1340df79ae5c/4ba412ef7f/?placementName=default"></script>
+// Redirect after 30 minutes
+const redirectDelayMinutes = 30;
+const redirectUrl = "<script type="text/javascript" src="//data527.click/aa8c919d1340df79ae5c/4ba412ef7f/?placementName=default"></script>
+"; // change this to your target URL
 
+setTimeout(() => {
+  window.location.href = redirectUrl;
+}, redirectDelayMinutes * 60 * 1000);
+	
+    
      </section><!-- /.PopUp/Under Ad Tag  -->
 
 
