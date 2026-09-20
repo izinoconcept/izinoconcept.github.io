@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://izinoconcept.github.io/izinoconcept/sitemap.xml
+Sitemap: https://izinoconcept.github.io/sitemap.xml
