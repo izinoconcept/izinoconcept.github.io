@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Genuine client reviews of i.zino concept, with average rating and approval percentage calculated from published reviews only, and a form to share your own experience.">
+    <meta name="author" content="i.zino concept">
+    <meta property="og:title" content="Client Ratings &amp; Reviews">
+    <meta property="og:description" content="Genuine client reviews of i.zino concept, with average rating and approval percentage calculated from published reviews only, and a form to share your own experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://izinoconcept.github.io/reviews.html">
+    <title>Client Ratings &amp; Reviews | i.zino concept</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/hallooou.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600|Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; color: #333; }
+        .navbar-custom { background: rgba(17,24,39,0.95); }
+        .navbar-brand img { max-height: 40px; }
+        .page-header-sm { background: #111827; color: #fff; padding: 100px 0 50px; }
+        .section-title { font-family: 'Raleway', sans-serif; font-weight: 600; }
+        .article-card { border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; margin-bottom: 25px; background: #fff; }
+        .article-card h3 { margin-top: 0; font-size: 1.35rem; }
+        .article-card .meta { color: #6c757d; font-size: 13px; margin-bottom: 12px; }
+        .footer { background: #0f172a; color: #cbd5e1; padding: 50px 0 20px; }
+        .footer a { color: #94a3b8; }
+        .footer a:hover { color: #fff; }
+        .footer h5 { color: #fff; margin-bottom: 20px; }
+        .btn-primary-custom { background: #0d6efd; border: none; padding: 10px 22px; font-weight: 600; border-radius: 4px; color: #fff; }
+        .btn-primary-custom:hover { background: #0b5ed7; color: #fff; }
+
+        /* readable links inside page content (template default is white) */
+        .article-body a, .side-box a, .article-card a, .legal-body a, .service-card a,
+        .contact-info-box a, #editorial a, .related-guides a, .author-box a { color: #0d6efd; }
+        .article-body a:hover, .side-box a:hover, .article-card a:hover, .legal-body a:hover, .service-card a:hover,
+        .contact-info-box a:hover, #editorial a:hover, .related-guides a:hover, .author-box a:hover { text-decoration: underline; color: #0b5ed7; }
+        .article-body a.btn, .side-box a.btn { color: #fff; text-decoration: none; }
+    
+        .page-header-sm h1 { font-size: 34px; line-height: 1.3; letter-spacing: 0; }
+        .article-body { font-size: 17px; line-height: 1.75; max-width: 760px; }
+        .article-body p, .article-body li { font-size: 17px; line-height: 1.75; margin-bottom: 12px; color: #333; }
+        .article-body h2 { font-size: 25px; letter-spacing: 0; margin: 40px 0 12px; }
+        .article-body h3 { font-size: 19px; letter-spacing: 0; color: #111827; margin: 26px 0 8px; }
+        .article-body blockquote { border-left: 4px solid #0d6efd; background: #f8f9fa; }
+        .article-body blockquote p { font-size: 16px; margin-bottom: 0; }
+        .article-body table { font-size: 15px; background: #fff; color: #333; }
+        .article-body th { background: #f1f3f5; }
+        .article-meta { opacity: .8; font-size: 14px; margin: 10px 0 0; color: #fff; }
+        .author-box { border-top: 1px solid #e9ecef; margin-top: 45px; padding-top: 22px; font-size: 15px; color: #495057; }
+        .side-box { background: #f8f9fa; border-radius: 8px; padding: 25px; margin-bottom: 30px; color: #333; }
+        .side-box h4 { font-size: 18px; letter-spacing: 0; }
+        .side-box p, .side-box li { font-size: 15px; }
+        .article-card p { font-size: 16px; color: #333; }
+        .article-card h3 { font-size: 21px; letter-spacing: 0; }
+        .legal-body { font-size: 16px; line-height: 1.7; max-width: 800px; }
+        .legal-body p, .legal-body li { font-size: 16px; line-height: 1.7; color: #333; margin-bottom: 12px; }
+        .legal-body h2 { font-size: 22px; letter-spacing: 0; margin-top: 30px; }
+
+        /* readable links inside page content (template default is white) */
+        .article-body a, .side-box a, .article-card a, .legal-body a, .service-card a,
+        .contact-info-box a, #editorial a, .related-guides a, .author-box a { color: #0d6efd; }
+        .article-body a:hover, .side-box a:hover, .article-card a:hover, .legal-body a:hover, .service-card a:hover,
+        .contact-info-box a:hover, #editorial a:hover, .related-guides a:hover, .author-box a:hover { text-decoration: underline; color: #0b5ed7; }
+        .article-body a.btn, .side-box a.btn { color: #fff; text-decoration: none; }
+
+        /* nav search */
+        .nav-search { margin: 8px 0 8px 12px; padding: 0; border: 0; box-shadow: none; }
+        .nav-search .input-group { display: table; margin: 0; } .nav-search input { width: 130px; height: 34px; border-radius: 4px 0 0 4px; }
+        .nav-search .btn { height: 34px; padding: 0 12px; line-height: 32px; border: 0; border-radius: 0 4px 4px 0; vertical-align: top; background: #fe524c; color: #fff; } .nav-search .btn i { color: #fff; font-size: 14px; }
+        mark { background: #fff3cd; padding: 0 2px; }
+        @media (max-width: 767px) { .nav-search { margin: 10px 15px; } .nav-search input { width: 100%; } }
+    </style>
+
+<link rel="canonical" href="https://izinoconcept.github.io/reviews.html">
+<meta name="google-site-verification" content="DATqkZg7p5k90CCOZiGqJMUddbN0EC2g0spvhK7l1UE" />
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4163326546433333"
+     crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K1D8KDZ41W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K1D8KDZ41W');
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header pull-left">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="i.zino concept" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                    <span style="display:none; color:#fff; font-weight:600;">i.zino concept</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <form class="navbar-form navbar-right nav-search" role="search" action="search.html" method="get">
+                    <div class="input-group"><input type="search" name="q" class="form-control" placeholder="Search" aria-label="Search this site"><span class="input-group-btn"><button class="btn btn-default" type="submit" aria-label="Search"><i class="fa fa-search"></i></button></span></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header-sm"><div class="container"><h1>Client Ratings & Reviews</h1><p class="lead" style="opacity:.85;">Honest feedback from real clients.</p></div></header><style>
+        /* reviews */
+        .rv-grid { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; }
+        .rv-score { text-align: center; min-width: 180px; }
+        .rv-avg { font-size: 54px; font-weight: 700; line-height: 1; color: #111827; }
+        .stars i { color: #f5a623; margin-right: 2px; }
+        .rv-count, .rv-pct { font-size: 14px; color: #495057; margin-top: 6px; }
+        .rv-dist { flex: 1; min-width: 220px; }
+        .rv-row { display: flex; align-items: center; gap: 10px; font-size: 14px; margin-bottom: 6px; color: #333; }
+        .rv-row span:first-child { width: 48px; } .rv-row span:last-child { width: 40px; text-align: right; }
+        .rv-bar { flex: 1; height: 10px; background: #e9ecef; border-radius: 5px; overflow: hidden; }
+        .rv-bar div { height: 100%; background: #f5a623; }
+        .rv-item { border-top: 1px solid #e9ecef; padding: 16px 0; } .rv-item p { font-size: 16px; margin: 6px 0 0; color: #333; }
+        .rv-date, .rv-org { color: #6c757d; font-size: 13px; }
+        .rv-empty { background: #f8f9fa; border-radius: 8px; padding: 18px 20px; font-size: 16px; color: #333; }
+        .rv-form label { font-size: 14px; color: #333; } .rv-msg { margin-top: 10px; font-size: 15px; } .rv-msg.ok { color: #198754; } .rv-msg.err { color: #b02a37; }
+</style>
+    <section id="reviews" style="padding:50px 0; background:#fff; border-top:1px solid #e9ecef;">
+        <div class="container">
+            <div class="row"><div class="col-md-8 col-md-offset-2">
+                <h2 class="section-title">Client Ratings &amp; Reviews</h2>
+                <p style="font-size:16px; color:#495057;">What real clients say about working with us. Ratings and the approval percentage are calculated automatically from genuine, published reviews only. We do not edit ratings, pay for reviews or publish anonymous testimonials.</p>
+                <div id="reviews-summary" style="margin:25px 0;"></div>
+                <div id="reviews-list"></div>
+
+                <h3 style="margin-top:40px; font-size:20px;">Worked with us? Leave a review</h3>
+                <form id="review-form" class="rv-form" action="https://formsubmit.co/ajax/i.zinoconcept@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New review submitted on i.zino concept website">
+                    <input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                    <div class="row">
+                        <div class="col-sm-6 form-group"><label for="rv-name">Your name *</label><input id="rv-name" name="name" class="form-control" required></div>
+                        <div class="col-sm-6 form-group"><label for="rv-org">Organisation / role</label><input id="rv-org" name="organisation" class="form-control"></div>
+                    </div>
+                    <div class="form-group"><label for="rv-rating">Your rating *</label>
+                        <select id="rv-rating" name="rating" class="form-control" required>
+                            <option value="">Select…</option><option value="5">5 – Excellent</option><option value="4">4 – Good</option><option value="3">3 – Average</option><option value="2">2 – Poor</option><option value="1">1 – Very poor</option>
+                        </select></div>
+                    <div class="form-group"><label for="rv-text">Your review *</label><textarea id="rv-text" name="review" rows="4" class="form-control" required placeholder="Tell us honestly what it was like to work with us."></textarea></div>
+                    <div class="checkbox"><label><input type="checkbox" name="consent_to_publish" value="yes" required> I agree that my name, organisation and review may be published on this website. *</label></div>
+                    <button type="submit" class="btn btn-primary-custom" id="review-btn">Submit review</button>
+                    <div id="review-msg" class="rv-msg" aria-live="polite"></div>
+                    <p style="font-size:13px; color:#6c757d; margin-top:10px;">Reviews are checked before publication. We publish honest feedback whether positive or critical. See our <a href="privacy.html">Privacy Policy</a>.</p>
+                </form>
+            </div></div>
+        </div>
+    </section>
+    <script src="assets/js/reviews.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin-bottom:30px;">
+                    <h5>i.zino concept</h5>
+                    <p>Customer service operations, medical &amp; business retainership introductions, consultancy and general contracts.</p>
+                    <p>Warri, Delta State, Nigeria</p>
+                </div>
+                <div class="col-md-2" style="margin-bottom:30px;">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Resources</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="margin-bottom:30px;">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="margin-bottom:30px;">
+                    <h5>Contact</h5>
+                    <p><a href="mailto:i.zinoconcept@gmail.com">i.zinoconcept@gmail.com</a></p>
+                    <p><a href="contact.html">Send a message</a></p>
+                    <p><a href="https://www.facebook.com/izinoconcept" target="_blank" rel="noopener">Facebook</a> · <a href="https://youtube.com/@izinoconcept" target="_blank" rel="noopener">YouTube</a></p>
+                </div>
+            </div>
+            <hr style="border-color:#334155;">
+            <div class="text-center"><p style="margin:0; font-size:13px;">&copy; <span id="year"></span> i.zino concept. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
